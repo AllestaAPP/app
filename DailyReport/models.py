@@ -4,6 +4,7 @@ from django.core.validators import RegexValidator
 
 
 class Item(models.Model):
+
     SEX_CHOICES = (
         (1, '男性'),
         (2, '女性'),
@@ -30,7 +31,7 @@ class Item(models.Model):
     takuhaikenpin = models.IntegerField(
         verbose_name='宅配検品',
         validators=[numeric],
-        # blank=True,
+        #blank=True,
         null=True,
         default=0
     )
@@ -62,7 +63,7 @@ class Item(models.Model):
     # 管理サイト上の表示設定
     def __str__(self):
         return self.name
-
+        
     class Meta:
         verbose_name = 'アイテム'
         verbose_name_plural = 'アイテム'
