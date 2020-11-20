@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be187598-a33b-466a-b369-5f8974d08072" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DailyReport/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/DailyReport/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DailyReport/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/DailyReport/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DailyReport/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DailyReport/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/DailyReport/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
