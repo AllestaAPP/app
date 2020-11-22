@@ -77,10 +77,14 @@ def csvdownload(request):
     response['Content-Disposition'] = 'attachment; filename*=UTF-8\'\'{}'.format(filename)
     writer = csv.writer(response)
 
+    writer.writerow(["氏名", "宅配検品", "その他検品", "入庫商品化", "仕入商品化", "クリーニング", "データイレース",
+                     "仕入PC", "ツタヤ関連", "宅配開梱", "搬出・ピッキング", "データ・画像登録", "備考", "登録日",])
     #for item in Item.objects.all():
     for item in Item.objects.filter(created_at__icontains=date.today()):
         #yymmdd = str(item.created_at)
         #str_yymmdd = re.sub('\s\S.*', '', yymmdd)
         #print(str_yymmdd)
-        writer.writerow([item.name, item.takuhaikenpin, item.sonotakenpin, item.sex, item.memo, item.created_at])
+        writer.writerow([item.name, item.takuhaikenpin, item.sonotakenpin, item.nyuukosyouhinka, item.shiiresyouhinka,
+                         item.cleaning, item.dataerase, item.shiirePC, item.tsutaya, item.takuhaikaikon, item.picking,
+                         item.datanyuuryoku, item.memo, item.created_at])
     return response
